@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Curated culinary, cultural, desert, mountain, and wellness experiences at Riad Sin in Marrakech." name="description"/>
+<title>Experiences | Riad Sin Marrakech</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#faf9f7",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "inverse-on-surface": "#f1f1ef",
+                        "on-background": "#1a1c1b",
+                        "secondary-fixed-dim": "#cac6bf",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#e9e8e6",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#858383",
+                        "outline-variant": "#c4c7c7",
+                        "surface-container": "#efeeec",
+                        "surface-variant": "#e3e2e0",
+                        "primary": "#000000",
+                        "tertiary-fixed": "#e4e2e2",
+                        "on-surface": "#1a1c1b",
+                        "surface-dim": "#dadad8",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "error": "#ba1a1a",
+                        "bone": "#F3EEE7",
+                        "primary-container": "#1c1b1b",
+                        "onyx": "#0F0F0F",
+                        "secondary": "#615e59",
+                        "primary-fixed": "#e5e2e1",
+                        "outline": "#747878",
+                        "on-primary-fixed": "#1c1b1b",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#474746",
+                        "on-tertiary-container": "#848484",
+                        "inverse-primary": "#c8c6c5",
+                        "surface-tint": "#5f5e5e",
+                        "surface": "#faf9f7",
+                        "on-surface-variant": "#444748",
+                        "tertiary-fixed-dim": "#c7c6c6",
+                        "surface-container-low": "#f4f3f1",
+                        "gold-leaf": "#C5A059",
+                        "surface-bright": "#faf9f7",
+                        "on-secondary-fixed-variant": "#494742",
+                        "tertiary-container": "#1b1c1c",
+                        "secondary-container": "#e7e2db",
+                        "inverse-surface": "#2f3130",
+                        "terracotta-muted": "#A67B5B",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#000000",
+                        "on-secondary-fixed": "#1d1b17",
+                        "on-secondary-container": "#67645f",
+                        "secondary-fixed": "#e7e2db"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "24px",
+                        "margin-desktop": "80px",
+                        "container-max": "1440px",
+                        "gutter": "32px",
+                        "section-gap": "160px",
+                        "margin-tablet": "40px"
+                    },
+                    "fontFamily": {
+                        "button": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "label-caps": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "button": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                        "headline-md": ["28px", {"lineHeight": "1.3", "letterSpacing": "0.03em", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.2em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "0.03em", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #faf9f7;
+            color: #1a1c1b;
+            -webkit-font-smoothing: antialiased;
+        }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 1s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .parallax-bg { transition: transform 0.2s linear; }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            .reveal { opacity: 1; transform: none; transition: none; }
+            .parallax-bg { transition: none; }
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed inset-x-0 top-0 z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/20">
+    <div class="h-24 flex justify-between items-center px-margin-mobile md:px-margin-tablet lg:px-margin-desktop max-w-container-max mx-auto">
+        <a class="font-headline-lg text-[32px] tracking-tight text-primary whitespace-nowrap" href="home.html" aria-label="Riad Sin home">Riad Sin</a>
+        <div class="hidden md:flex gap-6 lg:gap-10 items-center">
+            <a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="home.html">The Riad</a>
+            <a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="suites.html">Suites</a>
+            <a aria-current="page" class="font-label-caps text-label-caps uppercase text-primary border-b-2 border-secondary-container pb-1" href="experiences.html">Experiences</a>
+            <a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="wellness.html">Wellness</a>
+            <a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="journal.html">Journal</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <button id="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu" class="md:hidden text-on-surface-variant hover:text-primary transition-colors duration-300">
+                <span class="material-symbols-outlined text-[32px]">menu</span>
+            </button>
+            <a class="hidden lg:inline-flex bg-primary text-on-primary px-8 py-3 font-button text-button uppercase transition-colors duration-300 hover:bg-onyx" href="mailto:reservations@riadsin.com?subject=Booking%20inquiry">
+                Book Now
+            </a>
+        </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden bg-surface/95 border-t border-outline-variant/10">
+        <div class="px-margin-mobile py-6 space-y-4">
+            <a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="home.html">The Riad</a>
+            <a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="suites.html">Suites</a>
+            <a aria-current="page" class="block font-label-caps text-label-caps uppercase text-primary border-b border-primary pb-1" href="experiences.html">Experiences</a>
+            <a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="wellness.html">Wellness</a>
+            <a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="journal.html">Journal</a>
+            <a class="block w-full text-center bg-primary text-on-primary rounded-full py-3 font-button text-button uppercase transition-all duration-300 hover:bg-onyx" href="mailto:reservations@riadsin.com?subject=Booking%20inquiry">Book Now</a>
+        </div>
+    </div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Sunlit Moroccan courtyard at Riad Sin" class="w-full h-full object-cover parallax-bg" id="hero-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCceFaRyfdH-lyc3B2-TC-cIDXTYq2m_PcGpIeD7IJE5E-vP6Z67GydLTxeQf4ujnQWlPPl8iIjCK8sQxCaJDO_qRj5HCGBw7NLtxjc9LcC56u8bhJaKX6a1_-VrDFOdjUluxsC2UWuBPoophh1b6o2LqqLt8N60G9jRtzMMHIw3-rXAEsoxZnGQz3RkqPPEHadH9TPNahV5jlNjNv0Zdn6-G4evSpFSmCi3YKvkyxXJyh3vj4vYdBLKu3sooGfrhrvsBr6tQl3wq4"/>
+<div class="absolute inset-0 bg-black/20"></div>
+</div>
+<div class="relative z-10 text-center text-white px-margin-mobile">
+<p class="font-label-caps text-label-caps tracking-[0.4em] uppercase mb-6 opacity-80">Curation of the Senses</p>
+<h1 class="font-display-lg text-[48px] md:text-display-lg leading-tight mb-8">Architectural Serenity</h1>
+<div class="w-px h-24 bg-white/40 mx-auto"></div>
+</div>
+</header>
+
+<main class="max-w-container-max mx-auto">
+<!-- Intro Text -->
+<section class="py-24 md:py-section-gap px-margin-mobile md:px-margin-desktop flex flex-col items-center text-center max-w-4xl mx-auto reveal">
+<h2 class="font-headline-lg text-headline-lg mb-10 italic">A journey designed to still the mind and awaken the spirit.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                At Riad Sin, experiences are not mere activities; they are choreographed moments of cultural immersion. Each journey is curated with the precision of an architect and the soul of an artisan.
+            </p>
+</section>
+<!-- The Alchemist's Kitchen (Gastronomy) -->
+<section class="mb-24 md:mb-section-gap px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 reveal">
+<img alt="Moroccan tagine presented on a linen table" class="w-full aspect-[4/5] object-cover grayscale-[20%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_0S7eY3eLNnVCjvAaTUZr3UQIWvtSjDW1WSluB2Y6CyVxSr2ZSbdL44i67FFr_C1yeF8MfnCf-dUOj3NFXlfD1aenHipjWMoN2z-px7CRO3MT1iqZobHg0c0c1PCHMJqvDOEgTlE-FIWsdTzIlq3Tnb7Xg23Hj6t4DOQIgub7pu0lfPQJFcj2QDeQk8HagAKloGIHZJOYDDslmMlOD7ekSr65Rfqw1l18NpvRxMvXZDaokyCr7lF9GPSNo7XNNPNLrfx-_yCsCKY"/>
+</div>
+<div class="md:col-span-5 md:pl-12 reveal">
+<span class="font-label-caps text-label-caps tracking-widest text-terracotta-muted mb-4 block">GASTRONOMY</span>
+<h3 class="font-headline-lg text-headline-lg mb-6">The Alchemist&rsquo;s Kitchen</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+                    Unveil the secrets of Moroccan spices through a lens of contemporary minimalism. Join our master chef in selecting organic produce from the market, followed by a private session in our architectural kitchen, where traditional recipes are elevated into modern art.
+                </p>
+<a class="group flex items-center gap-4 font-button text-button uppercase tracking-widest" href="mailto:concierge@riadsin.com?subject=Culinary%20experience">
+                    Explore Culinary Art
+                    <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Whispers of the Medina (Curated Tours) - Asymmetric Layout -->
+<section class="mb-24 md:mb-section-gap bg-onyx py-24 md:py-32">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center px-margin-mobile md:px-margin-desktop">
+<div class="md:col-span-4 order-2 md:order-1 reveal">
+<span class="font-label-caps text-label-caps tracking-widest text-gold-leaf mb-4 block">CURATED DISCOVERY</span>
+<h3 class="font-headline-lg text-headline-lg text-bone mb-6">Whispers of the Medina</h3>
+<p class="font-body-md text-body-md text-surface-variant/80 mb-8 leading-relaxed">
+                        A private guide leads you through the labyrinthine streets of Marrakech, focusing on hidden architectural gems and secret artisan workshops typically closed to the public. Discover the geometry of the sacred and the silence within the noise.
+                    </p>
+<a class="inline-flex px-8 py-3 border border-bone text-bone font-button text-button uppercase tracking-widest hover:bg-bone hover:text-onyx transition-all duration-300" href="mailto:concierge@riadsin.com?subject=Private%20Medina%20guide">
+                        Request Private Guide
+                    </a>
+</div>
+<div class="md:col-span-8 order-1 md:order-2 flex justify-end reveal">
+<img alt="A sunlit alley in the Marrakech Medina" class="w-full md:w-5/6 aspect-video object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC65saOiM8LBoSVMfdp6roq0STOtE57YuQDDnaFg0rcae1D34a8uo5-iU6vIGlpt2tn46XZGg6A0XYHnbJ5hCp5MpFkKZ71d-9yEvP0qN-QKIbJm3Ze8l8mUUANHMdl1Rr-86LzkYDooVLbZOCFIVNdhODEyn_EWIWnNyIc2gALPTpFQOjINDZotOmIf67HSDfpe0H_EFCssiXxnkWSPePd4gaPUAZaldn82vHdTFEtYB5Nehwc_UQ3S8Y2ffbXbzdQrtMb2nPEOGU"/>
+</div>
+</div>
+</section>
+<!-- Agafay Nights & Atlas Heights (Excursions) - Bento-like Grid -->
+<section class="mb-24 md:mb-section-gap px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16 reveal">
+<span class="font-label-caps text-label-caps tracking-widest text-terracotta-muted mb-4 block">BEYOND THE WALLS</span>
+<h3 class="font-headline-lg text-headline-lg">Agafay Nights &amp; Atlas Heights</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="reveal group">
+<div class="overflow-hidden mb-6 aspect-[3/4]">
+<img alt="Private tent in the Agafay Desert at twilight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkDz1HVBq7hIL_yrdPyzWIspmk2xjIIA70lCqEMQOf1_8hEPgHc12viyrxMZcV0Ye5vhbmW1y2QwzZsIpDS361dfA-Vmonh5FZuoc_bNS0B8s_DwTlMBBFAwDa2bx0RWy4jta1GNUyyoA3bv0_vCH7uMPYRUlt2TDtf0zOtGhhhWo4lpVRqT8lznqAjS9_0xlDGYgQK9TNoE_63wiEtIxgDO4r9IliQJwMapI62qtV61fXYPWlieo_KtLjdhgaB8Dw4jTGgvidCns"/>
+</div>
+<h4 class="font-headline-md text-headline-md mb-2">Celestial Agafay</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Dinner under the stars in a private, minimalist desert camp.</p>
+</div>
+<div class="reveal group md:mt-12">
+<div class="overflow-hidden mb-6 aspect-[3/4]">
+<img alt="Snow-capped peaks in the Atlas Mountains" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzNJCoe-0TmlsyXZ02LHZoreOwmRQkQHCpHWkXMwZLsUfiXzzbLiCmWYvYcZ5HwPlZlMP3mEkuA68910zvP9zrWxIjF7p_qtu6r_FU1unZZ5FFsq8zSiH1vC1ckenGfZ0lP-G_OtmTwWtCYS03Q87lyI7rG1L9QY1dh5ivU3hRXUj-7fhvOUgOi76QagZfk8WImhFnASM4nD-ucdFZwhgYsaRHW_Zoj7d4tFQ-addEJrcFeT9H2iD-8Ioyj6qaWmmHo4AU1Z_kBl0"/>
+</div>
+<h4 class="font-headline-md text-headline-md mb-2">High Atlas Retreat</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Helicopter excursions to remote peaks for silent contemplation.</p>
+</div>
+<div class="reveal group">
+<div class="overflow-hidden mb-6 aspect-[3/4]">
+<img alt="Berber artisan weaving wool in a mountain village" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQt7djdJ9Hjua7jwLdI81OZzfZnggrE0PEfCqOSWYfA2aUfHoMPvdHqI0lICW86fOOecaKdTMS2v-ICnquxAAfBRuSXcYS48E_BN4_R8Kgs7HwE-qe05K0KKnj4HdUIhtMunqwNKwQG7x2nZ1xZ7ThS_ne6Nh6wsFZNHpE4QzoQs75yHOwIyTvxGZUKdDLpgOeCaq6owbeioA1wQWl-LlDGN9Dq25vSjbMqSkWEabfd2fYwTnxX99EYMlHg-cAchzNmpGSWAXkO6c"/>
+</div>
+<h4 class="font-headline-md text-headline-md mb-2">Artisan Heritage</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Private audience with remote mountain weavers and potters.</p>
+</div>
+</div>
+</section>
+<!-- The Sacred Art of Tea -->
+<section class="mb-24 md:mb-section-gap px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+<div class="reveal">
+<span class="font-label-caps text-label-caps tracking-widest text-terracotta-muted mb-4 block">RITUAL</span>
+<h3 class="font-headline-lg text-headline-lg mb-6">The Sacred Art of Tea</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed italic">
+                    "In the pouring of tea, we find the rhythm of the soul."
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-10 leading-relaxed">
+                    Experience a transformative tea ceremony that blends Moroccan hospitality with Zen-like mindfulness. Held in our sunken courtyard garden at sunset, this ritual uses rare herbs and antique silver vessels to ground the senses in the present moment.
+                </p>
+<a class="inline-flex px-10 py-4 bg-onyx text-bone font-button text-button uppercase tracking-widest hover:bg-primary-container transition-all duration-300" href="mailto:concierge@riadsin.com?subject=Tea%20ritual">
+                    Book Ritual
+                </a>
+</div>
+<div class="relative reveal">
+<div class="absolute -top-10 -left-10 w-40 h-40 border-t border-l border-outline-variant/30 hidden md:block"></div>
+<img alt="Moroccan mint tea being poured into a glass" class="w-full aspect-square object-cover relative z-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTxxubQv_7QpXdR4fy_ZTK6YXQUXR5l0SgXJ5xqQHio9DBLhSsdlG60XnBAz8ZPT1Pdvc_LGf37XCg6P4gejKyvMjNGwhntzDHpBgqHT9QjN_5xDIKrLlEp5VULk1JJ7mjQOn0xQME6vupaKgVKtsNrRms67ibrwYlIiUazcIdANRdxKy4twKXFog6Vg14NPZVjmm1Dg7k7fsfzBpvfqI6RSHm3oLUz6gLJpU2g3mYtgwD_jsCWd1RNYH7-rGKErFVyQWjtAieDbg"/>
+<div class="absolute -bottom-10 -right-10 w-40 h-40 border-b border-r border-outline-variant/30 hidden md:block"></div>
+</div>
+</section>
+</main>
+<footer class="bg-surface-container-low dark:bg-surface-dim border-t border-outline-variant w-full pt-20 pb-10">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-4 mb-12 md:mb-0">
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim block mb-6">Riad Sin</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    A sanctuary of artisanal luxury and architectural precision in the heart of Marrakech.
+                </p>
+</div>
+<div class="md:col-span-2 mb-8 md:mb-0">
+<h4 class="font-label-caps text-label-caps tracking-widest mb-6">Navigation</h4>
+<div class="flex flex-col space-y-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors underline-offset-4 hover:underline" href="home.html">The Riad</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors underline-offset-4 hover:underline" href="suites.html">Suites</a>
+<a class="font-body-md text-body-md text-primary font-bold" href="experiences.html">Experiences</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors underline-offset-4 hover:underline" href="wellness.html">Wellness</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors underline-offset-4 hover:underline" href="journal.html">Journal</a>
+</div>
+</div>
+<div class="md:col-span-2 mb-8 md:mb-0">
+<h4 class="font-label-caps text-label-caps tracking-widest mb-6">Legal</h4>
+<div class="flex flex-col space-y-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors underline-offset-4 hover:underline" href="mailto:concierge@riadsin.com?subject=Privacy%20policy%20request">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors underline-offset-4 hover:underline" href="mailto:concierge@riadsin.com?subject=Terms%20of%20service%20request">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors underline-offset-4 hover:underline" href="mailto:concierge@riadsin.com?subject=Press%20kit%20request">Press Kit</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors underline-offset-4 hover:underline" href="mailto:concierge@riadsin.com">Contact Us</a>
+</div>
+</div>
+<div class="md:col-span-4">
+<h4 class="font-label-caps text-label-caps tracking-widest mb-6">Inquiries</h4>
+<a class="font-body-md text-body-md text-on-surface-variant mb-4 inline-block hover:text-primary" href="mailto:concierge@riadsin.com">concierge@riadsin.com</a>
+<div class="flex gap-6 mt-8">
+<span class="font-label-caps text-label-caps tracking-widest opacity-60">INSTAGRAM</span>
+<span class="font-label-caps text-label-caps tracking-widest opacity-60">FACEBOOK</span>
+</div>
+</div>
+</div>
+<div class="mt-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-outline-variant/10 pt-10 text-center md:text-left">
+<p class="font-body-md text-body-md text-tertiary dark:text-tertiary-fixed-dim opacity-60 italic">
+                &copy; 2026 Riad Sin Marrakech. A Sanctuary of Artisanal Luxury.
+            </p>
+</div>
+</footer>
+<script>
+        // Reveal on scroll
+        const reveals = document.querySelectorAll('.reveal');
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1 });
+            reveals.forEach(reveal => observer.observe(reveal));
+        } else {
+            reveals.forEach(reveal => reveal.classList.add('active'));
+        }
+
+        // Parallax effect
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const heroImg = document.getElementById('hero-img');
+                if (heroImg) heroImg.style.transform = `translateY(${scrolled * 0.4}px)`;
+            }, { passive: true });
+        }
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (menuToggle && mobileMenu) {
+            menuToggle.addEventListener('click', () => {
+                const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                menuToggle.setAttribute('aria-expanded', String(!expanded));
+                menuToggle.setAttribute('aria-label', expanded ? 'Open navigation menu' : 'Close navigation menu');
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>

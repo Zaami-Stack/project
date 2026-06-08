@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Stories of Marrakech craft, architecture, gastronomy, and culture from the Riad Sin journal." name="description"/>
+<title>Journal | Riad Sin Marrakech</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#faf9f7",
+                    "on-tertiary-fixed-variant": "#464747",
+                    "inverse-on-surface": "#f1f1ef",
+                    "on-background": "#1a1c1b",
+                    "secondary-fixed-dim": "#cac6bf",
+                    "error-container": "#ffdad6",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#e9e8e6",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#858383",
+                    "outline-variant": "#c4c7c7",
+                    "surface-container": "#efeeec",
+                    "surface-variant": "#e3e2e0",
+                    "primary": "#000000",
+                    "tertiary-fixed": "#e4e2e2",
+                    "on-surface": "#1a1c1b",
+                    "surface-dim": "#dadad8",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "surface-container-highest": "#e3e2e0",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "error": "#ba1a1a",
+                    "bone": "#F3EEE7",
+                    "primary-container": "#1c1b1b",
+                    "onyx": "#0F0F0F",
+                    "secondary": "#615e59",
+                    "primary-fixed": "#e5e2e1",
+                    "outline": "#747878",
+                    "on-primary-fixed": "#1c1b1b",
+                    "on-error-container": "#93000a",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#474746",
+                    "on-tertiary-container": "#848484",
+                    "inverse-primary": "#c8c6c5",
+                    "surface-tint": "#5f5e5e",
+                    "surface": "#faf9f7",
+                    "on-surface-variant": "#444748",
+                    "tertiary-fixed-dim": "#c7c6c6",
+                    "surface-container-low": "#f4f3f1",
+                    "gold-leaf": "#C5A059",
+                    "surface-bright": "#faf9f7",
+                    "on-secondary-fixed-variant": "#494742",
+                    "tertiary-container": "#1b1c1c",
+                    "secondary-container": "#e7e2db",
+                    "inverse-surface": "#2f3130",
+                    "terracotta-muted": "#A67B5B",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary": "#000000",
+                    "on-secondary-fixed": "#1d1b17",
+                    "on-secondary-container": "#67645f",
+                    "secondary-fixed": "#e7e2db"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "24px",
+                    "section-gap": "160px",
+                    "container-max": "1440px",
+                    "margin-tablet": "40px",
+                    "margin-desktop": "80px",
+                    "gutter": "32px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "button": ["Inter"],
+                    "label-caps": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "button": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.2em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                    "headline-md": ["28px", {"lineHeight": "1.3", "letterSpacing": "0.03em", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "0.03em", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body {
+            background-color: #faf9f7;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 50%);
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-on-scroll.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .line-clamp-editorial {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed inset-x-0 top-0 z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/20">
+    <div class="h-24 flex justify-between items-center px-margin-mobile md:px-margin-tablet lg:px-margin-desktop max-w-container-max mx-auto">
+        <a class="font-headline-lg text-[32px] tracking-tight text-primary whitespace-nowrap" href="home.html" aria-label="Riad Sin home">Riad Sin</a>
+        <div class="hidden md:flex gap-6 lg:gap-10 items-center">
+            <a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="home.html">The Riad</a>
+            <a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="suites.html">Suites</a>
+            <a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="experiences.html">Experiences</a>
+            <a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="wellness.html">Wellness</a>
+            <a aria-current="page" class="font-label-caps text-label-caps uppercase text-primary border-b border-primary pb-1" href="journal.html">Journal</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <button id="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu" class="md:hidden text-on-surface-variant hover:text-primary transition-colors duration-300">
+                <span class="material-symbols-outlined text-[32px]">menu</span>
+            </button>
+            <a class="hidden lg:inline-flex bg-primary text-on-primary px-8 py-3 font-button text-button uppercase transition-colors duration-300 hover:bg-onyx" href="mailto:reservations@riadsin.com?subject=Booking%20inquiry">
+                Book Now
+            </a>
+        </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden bg-surface/95 border-t border-outline-variant/10">
+        <div class="px-margin-mobile py-6 space-y-4">
+            <a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="home.html">The Riad</a>
+            <a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="suites.html">Suites</a>
+            <a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="experiences.html">Experiences</a>
+            <a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="wellness.html">Wellness</a>
+            <a aria-current="page" class="block font-label-caps text-label-caps uppercase text-primary border-b border-primary pb-1" href="journal.html">Journal</a>
+            <a class="block w-full text-center bg-primary text-on-primary rounded-full py-3 font-button text-button uppercase transition-all duration-300 hover:bg-onyx" href="mailto:reservations@riadsin.com?subject=Booking%20inquiry">Book Now</a>
+        </div>
+    </div>
+</nav>
+
+<main class="pt-32 pb-section-gap">
+
+<!-- Featured Article -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap reveal-on-scroll">
+<div class="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden group mb-12">
+<img alt="Moroccan artisan carving a cedar door" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-_B8M5xwggnfreV21lS0CM2wVSZqC2FXLdNDba7QMYGRTRv7H3pRe77AWz73dzGOXrpRNr4dZhaGZ0DPtHR7Q0Dug1obEEe2n5ASuHy6FpDfVwhf3sba7T3eLVcNdxs25rW7Fo-Z6ela57Wd-3NDQlP8YCQG_ceZ0Go20bQB05vL_9Z7Re_tLS7NO0zu3ybVvY1op59Mhm8YcKXSZG-AroMCBY8WhXp3CCqIf0EXP76M5OVUavK9kEjx36EBZ5XzCvV_rNo_K0sU"/>
+<div class="absolute inset-0 hero-gradient flex flex-col justify-end p-8 md:p-16">
+<span class="font-label-caps text-label-caps text-bone mb-4">ARTISANAL | FEATURED STORY</span>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-bone max-w-4xl leading-tight">The Silent Hands of the Medina: A Masterclass in Cedar Carving</h1>
+<div class="mt-8">
+<a class="inline-flex items-center gap-4 text-bone font-button text-button uppercase border-b border-bone/30 pb-1 hover:border-bone transition-all duration-300" href="mailto:concierge@riadsin.com?subject=Journal%20story%3A%20The%20Silent%20Hands%20of%20the%20Medina">
+                            Read the Narrative
+                            <span class="material-symbols-outlined text-[18px]">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Grid Header -->
+<section id="latest-stories" class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-16 reveal-on-scroll">
+<div class="flex flex-col md:flex-row md:items-end justify-between border-b border-outline-variant/30 pb-8 gap-6">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-headline-lg mb-4">Latest Stories</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">A curated chronicle of the Moroccan zeitgeist&mdash;from the rhythmic echoes of the souks to the quiet revolutions of contemporary design.</p>
+</div>
+<div class="flex gap-6 overflow-x-auto pb-2 no-scrollbar">
+<button class="journal-filter font-label-caps text-label-caps uppercase whitespace-nowrap border-b-2 border-primary pb-2" type="button" data-filter="all" aria-pressed="true">All Stories</button>
+<button class="journal-filter font-label-caps text-label-caps uppercase whitespace-nowrap text-on-surface-variant hover:text-primary transition-colors pb-2" type="button" data-filter="artisanal" aria-pressed="false">Artisanal</button>
+<button class="journal-filter font-label-caps text-label-caps uppercase whitespace-nowrap text-on-surface-variant hover:text-primary transition-colors pb-2" type="button" data-filter="gastronomy" aria-pressed="false">Gastronomy</button>
+<button class="journal-filter font-label-caps text-label-caps uppercase whitespace-nowrap text-on-surface-variant hover:text-primary transition-colors pb-2" type="button" data-filter="culture" aria-pressed="false">Culture</button>
+</div>
+</div>
+</section>
+<!-- Journal Feed -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto reveal-on-scroll">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-y-20 gap-x-gutter">
+<!-- Story 1: Large Column -->
+<article class="journal-story md:col-span-8 group" data-category="gastronomy">
+<div class="aspect-[16/10] overflow-hidden mb-8 border border-outline-variant/10">
+<img alt="Moroccan mint tea service on a silver tray" class="w-full h-full object-cover grayscale-[40%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7vILV0xkMixEKUpZHQO15M25Js0OI9w9-vG2dTA_LrYBf8hpol7YcPM8Se-DU4LHo_ARoSIknhJGN1-brAPCArXPEbW7w0PFr_cXyNiU4PPR9HN1tY3g0CWOw36Rs7zNzQQN5Z2qeXeibubV1_UEqNrdpMtJJpTsGDWg4INeAl87ginXxF6NZTzOhZbB2bzjgwvBwIoH5nmQEljboisuMtpCF4331uBHs_p3eXs3kZWvtbhaqtgJChMjG9KZENIKcSaDzmnkgTBc"/>
+</div>
+<div class="flex gap-4 items-center mb-4">
+<span class="font-label-caps text-[10px] tracking-[0.3em] uppercase bg-secondary-container text-on-secondary-container px-3 py-1">Gastronomy</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">OCTOBER 14, 2024</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 group-hover:text-terracotta-muted transition-colors">Beyond the Pour: The Ritual and Architecture of Moroccan Mint Tea</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mb-6">Exploring the multi-sensory experience of the tea ritual, where the height of the pour meets the depth of hospitality in the heart of Marrakech.</p>
+<a class="font-button text-button uppercase underline underline-offset-8 decoration-outline-variant hover:decoration-primary transition-all" href="mailto:concierge@riadsin.com?subject=Journal%20story%3A%20Moroccan%20Mint%20Tea">Read Story</a>
+</article>
+<!-- Sidebar stories -->
+<div class="contents">
+<article class="journal-story md:col-span-4 group" data-category="culture">
+<div class="aspect-square overflow-hidden mb-6">
+<img alt="Palm tree shadow in a quiet Moroccan courtyard" class="w-full h-full object-cover grayscale-[100%] group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK0OzeukF0rqpVM9o_xCBAuyiF4w8z-z210J4iTw-K6Jy2bLF8rwegMyiGQmeVIvs8XEyM6Ga_Sq5CvxR452M8COyclqimjs8q11gb9bRNjtbU8owR2twsBVsZ1NTBIW7O3LuSl9YSppotMdPXy-sLZ_8nJX6Dkenr0XYfXnxAeEcLqn563W6m9WQ1eAbrec1JOa2Njbw2tKfl_hR8fdlgGHSeJE91ynYT2w3otHzDPfRJLviutOQZRN_1E8JVarL2SNUWIM1zrqY"/>
+</div>
+<span class="font-label-caps text-[10px] tracking-[0.3em] uppercase text-on-surface-variant mb-3 block">Culture</span>
+<h3 class="font-headline-md text-[22px] mb-3 leading-snug">The Architecture of Silence: Navigating Marrakech&rsquo;s Hidden Courtyards</h3>
+<a class="font-button text-button uppercase text-[12px] border-b border-outline-variant/30 pb-1" href="mailto:concierge@riadsin.com?subject=Journal%20story%3A%20Marrakech%20Courtyards">Explore</a>
+</article>
+<article class="journal-story md:col-span-4 group" data-category="artisanal">
+<div class="aspect-square overflow-hidden mb-6">
+<img alt="Close-up of hand-woven Moroccan textiles" class="w-full h-full object-cover grayscale-[100%] group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuHwoMG9tcgA_v9Js9SJJfbWFoaa-C0inYhZEDNycoVurIzjBoRox9lNr0LANq9eFFuRHcIL8QBsZ-XIcLocRuOCYIHwqckztS2-uFngysW54S7uCWzVFRYdq1ZroZhlVC0DgX5jDJ0afh79cXRc3pi-aScCw70K1MZDQ5iamb9JVQeDAzE6zLOC7VLh5kRh4tN6x1ablIF8nlV-iMlnynzgGweogbUMs24nBE2hD4eo31ZSRGyzC-xnTmcSUq1YAKqI0lsqEKybA"/>
+</div>
+<span class="font-label-caps text-[10px] tracking-[0.3em] uppercase text-on-surface-variant mb-3 block">Artisanal</span>
+<h3 class="font-headline-md text-[22px] mb-3 leading-snug">Woven History: The Enduring Legacy of Berber Textile Craft</h3>
+<a class="font-button text-button uppercase text-[12px] border-b border-outline-variant/30 pb-1" href="mailto:concierge@riadsin.com?subject=Journal%20story%3A%20Berber%20Textile%20Craft">Explore</a>
+</article>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="mt-section-gap px-margin-mobile md:px-margin-desktop reveal-on-scroll">
+<div class="max-w-container-max mx-auto bg-bone py-24 md:py-32 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-[48px] text-terracotta-muted mb-8" style="font-variation-settings: 'FILL' 0, 'wght' 200;">mail</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-6 max-w-2xl px-6">Join Our Journal</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-12 px-6">Receive seasonal chronicles, private invitations, and stories from the Riad directly to your inbox. No excess, just essence.</p>
+<form class="newsletter-form w-full max-w-md px-margin-mobile flex flex-col md:flex-row gap-4">
+<label class="sr-only" for="journal-newsletter-email">Email address</label>
+<input id="journal-newsletter-email" name="email" class="flex-grow bg-transparent border-0 border-b border-outline text-on-surface py-3 focus:ring-0 focus:border-primary transition-all font-body-md placeholder:text-outline-variant" placeholder="Your Email Address" type="email" autocomplete="email" required/>
+<button class="bg-primary text-on-primary font-button text-button uppercase px-10 py-4 hover:opacity-90 transition-all" type="submit">Subscribe</button>
+</form>
+<p class="newsletter-status mt-4 min-h-6 font-body-md text-sm text-on-surface-variant" aria-live="polite"></p>
+</div>
+</section>
+</main>
+
+<script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', () => {
+            const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', String(!expanded));
+            menuToggle.setAttribute('aria-label', expanded ? 'Open navigation menu' : 'Close navigation menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+
+    // Simple Intersection Observer for scroll animations
+    const observerOptions = { threshold: 0.1 };
+    const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+        }, observerOptions);
+        revealElements.forEach(element => observer.observe(element));
+    } else {
+        revealElements.forEach(element => element.classList.add('active'));
+    }
+
+    // Atmospheric micro-interaction for navbar transparency
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if (!nav) return;
+        nav.classList.toggle('shadow-sm', window.scrollY > 50);
+        nav.classList.toggle('bg-surface/95', window.scrollY > 50);
+    }, { passive: true });
+
+    const journalFilters = document.querySelectorAll('.journal-filter');
+    const journalStories = document.querySelectorAll('.journal-story');
+    journalFilters.forEach((button) => {
+        button.addEventListener('click', () => {
+            const filter = button.dataset.filter;
+            journalStories.forEach((story) => {
+                story.classList.toggle('hidden', filter !== 'all' && story.dataset.category !== filter);
+            });
+            journalFilters.forEach((filterButton) => {
+                const isActive = filterButton === button;
+                filterButton.setAttribute('aria-pressed', String(isActive));
+                filterButton.classList.toggle('border-b-2', isActive);
+                filterButton.classList.toggle('border-primary', isActive);
+                filterButton.classList.toggle('text-on-surface-variant', !isActive);
+            });
+        });
+    });
+
+    document.querySelectorAll('.newsletter-form').forEach((form) => {
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const status = form.parentElement.querySelector('.newsletter-status');
+            if (status) status.textContent = 'Thank you. Your subscription request has been received.';
+            form.reset();
+        });
+    });
+</script>
+</body></html>
